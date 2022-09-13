@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   landingPagePanel: {fileID: 62308018}
+  useSteam: 1
 --- !u!1 &62308018
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,9 +789,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5287063129779272547, guid: 5dcf7b418e09f9d429b3413bb3e2e904, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287063129779272549, guid: 5dcf7b418e09f9d429b3413bb3e2e904, type: 3}
+      propertyPath: transport
+      value: 
+      objectReference: {fileID: 631095930}
     - target: {fileID: 5287063129779272549, guid: 5dcf7b418e09f9d429b3413bb3e2e904, type: 3}
       propertyPath: onlineScene
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287063129779272549, guid: 5dcf7b418e09f9d429b3413bb3e2e904, type: 3}
+      propertyPath: maxConnections
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5287063129779272549, guid: 5dcf7b418e09f9d429b3413bb3e2e904, type: 3}
       propertyPath: unitBasePrefab
@@ -1284,6 +1297,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573514043}
   m_CullTransparentMesh: 1
+--- !u!1 &631095928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5287063129779272545, guid: 5dcf7b418e09f9d429b3413bb3e2e904, type: 3}
+  m_PrefabInstance: {fileID: 164292165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &631095929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631095928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef4bffeda13d7a748973ff9204401c07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &631095930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631095928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e55fca1f4e4844593a3dd65a3ecb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Channels: 0200000001000000
+  Timeout: 25
+  AllowSteamRelay: 1
+  UseNextGenSteamNetworking: 1
 --- !u!1 &679838823
 GameObject:
   m_ObjectHideFlags: 0
