@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5287063129779272546}
   - component: {fileID: 5287063129779272549}
   - component: {fileID: 5287063129779272547}
+  - component: {fileID: 631095929}
+  - component: {fileID: 631095930}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -49,10 +51,10 @@ MonoBehaviour:
   autoStartServerBuild: 1
   serverTickRate: 30
   offlineScene: Assets/Scenes/Scene_Menu.unity
-  onlineScene: Assets/Scenes/Scene_Map_01.unity
+  onlineScene: 
   transport: {fileID: 5287063129779272547}
   networkAddress: localhost
-  maxConnections: 100
+  maxConnections: 4
   authenticator: {fileID: 0}
   playerPrefab: {fileID: 1661870409974443933, guid: cc42bb779e941354da3db28f2635fca7, type: 3}
   autoCreatePlayer: 1
@@ -67,7 +69,7 @@ MonoBehaviour:
   - {fileID: 8506280334967378849, guid: 2267a66d521a1044b9b74a6872670be2, type: 3}
   - {fileID: 6934861235427267405, guid: f157bef29b4acad4b80dc16640bf2542, type: 3}
   - {fileID: 4559034318914058143, guid: c2af772deed03b249a840f85918cb131, type: 3}
-  unitSpawnerPrefab: {fileID: 2815559469801405205, guid: 830ff9d988c409d4497b514f1defb68a, type: 3}
+  unitBasePrefab: {fileID: 2815559469801405205, guid: 830ff9d988c409d4497b514f1defb68a, type: 3}
   gameOverHandlerPrefab: {fileID: 7039860946183134398, guid: f352eb1dce33f6642911a350d8834c83, type: 3}
 --- !u!114 &5287063129779272547
 MonoBehaviour:
@@ -98,3 +100,31 @@ MonoBehaviour:
   debugLog: 0
   statisticsGUI: 0
   statisticsLog: 0
+--- !u!114 &631095929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5287063129779272545}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef4bffeda13d7a748973ff9204401c07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &631095930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5287063129779272545}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e55fca1f4e4844593a3dd65a3ecb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Channels: 0200000001000000
+  Timeout: 25
+  AllowSteamRelay: 1
+  UseNextGenSteamNetworking: 1
